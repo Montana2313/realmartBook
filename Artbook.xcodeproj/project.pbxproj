@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63331E2CA39C11FC1D57C283 /* Pods_Artbook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CAC763B051D6764B72CBB79 /* Pods_Artbook.framework */; };
 		EE534478223252B6005A77F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE534477223252B6005A77F5 /* AppDelegate.swift */; };
 		EE53447A223252B6005A77F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE534479223252B6005A77F5 /* ViewController.swift */; };
 		EE53447D223252B6005A77F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE53447B223252B6005A77F5 /* Main.storyboard */; };
 		EE534480223252B6005A77F5 /* Artbook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE53447E223252B6005A77F5 /* Artbook.xcdatamodeld */; };
 		EE534482223252C2005A77F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE534481223252C2005A77F5 /* Assets.xcassets */; };
 		EE534485223252C2005A77F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE534483223252C2005A77F5 /* LaunchScreen.storyboard */; };
+		EE53448D2232568C005A77F5 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE53448C2232568C005A77F5 /* Artist.swift */; };
+		EE53448F22325948005A77F5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE53448E22325948005A77F5 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CAC763B051D6764B72CBB79 /* Pods_Artbook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Artbook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37B23EEA069467D96EB25696 /* Pods-Artbook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artbook.debug.xcconfig"; path = "Target Support Files/Pods-Artbook/Pods-Artbook.debug.xcconfig"; sourceTree = "<group>"; };
+		704D30B4913166A647EF344D /* Pods-Artbook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artbook.release.xcconfig"; path = "Target Support Files/Pods-Artbook/Pods-Artbook.release.xcconfig"; sourceTree = "<group>"; };
 		EE534474223252B6005A77F5 /* Artbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE534477223252B6005A77F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE534479223252B6005A77F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		EE534481223252C2005A77F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE534484223252C2005A77F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE534486223252C2005A77F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE53448C2232568C005A77F5 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		EE53448E22325948005A77F5 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63331E2CA39C11FC1D57C283 /* Pods_Artbook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B7D2F425B91B9400AE02663 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37B23EEA069467D96EB25696 /* Pods-Artbook.debug.xcconfig */,
+				704D30B4913166A647EF344D /* Pods-Artbook.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		731BFEB6B0F391DC99BEAA87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CAC763B051D6764B72CBB79 /* Pods_Artbook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EE53446B223252B5005A77F5 = {
 			isa = PBXGroup;
 			children = (
 				EE534476223252B6005A77F5 /* Artbook */,
 				EE534475223252B6005A77F5 /* Products */,
+				3B7D2F425B91B9400AE02663 /* Pods */,
+				731BFEB6B0F391DC99BEAA87 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,7 +86,9 @@
 			children = (
 				EE534477223252B6005A77F5 /* AppDelegate.swift */,
 				EE534479223252B6005A77F5 /* ViewController.swift */,
+				EE53448C2232568C005A77F5 /* Artist.swift */,
 				EE53447B223252B6005A77F5 /* Main.storyboard */,
+				EE53448E22325948005A77F5 /* SecondViewController.swift */,
 				EE534481223252C2005A77F5 /* Assets.xcassets */,
 				EE534483223252C2005A77F5 /* LaunchScreen.storyboard */,
 				EE534486223252C2005A77F5 /* Info.plist */,
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE534489223252C2005A77F5 /* Build configuration list for PBXNativeTarget "Artbook" */;
 			buildPhases = (
+				419D1D8F0CBC40BA877A1944 /* [CP] Check Pods Manifest.lock */,
 				EE534470223252B5005A77F5 /* Sources */,
 				EE534471223252B5005A77F5 /* Frameworks */,
 				EE534472223252B5005A77F5 /* Resources */,
+				171A09FD0492F88CCE10A4F4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +165,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		171A09FD0492F88CCE10A4F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Artbook/Pods-Artbook-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Artbook/Pods-Artbook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		419D1D8F0CBC40BA877A1944 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Artbook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EE534470223252B5005A77F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +221,8 @@
 			files = (
 				EE53447A223252B6005A77F5 /* ViewController.swift in Sources */,
 				EE534478223252B6005A77F5 /* AppDelegate.swift in Sources */,
+				EE53448D2232568C005A77F5 /* Artist.swift in Sources */,
+				EE53448F22325948005A77F5 /* SecondViewController.swift in Sources */,
 				EE534480223252B6005A77F5 /* Artbook.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +367,7 @@
 		};
 		EE53448A223252C2005A77F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37B23EEA069467D96EB25696 /* Pods-Artbook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +386,7 @@
 		};
 		EE53448B223252C2005A77F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 704D30B4913166A647EF344D /* Pods-Artbook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
